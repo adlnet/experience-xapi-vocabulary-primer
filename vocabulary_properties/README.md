@@ -1,0 +1,3 @@
+# Vocabulary Properties {#vocabulary-properties}
+
+Now, on to properties. These will generally require more explanation as to their appropriate use. The classes above will mostly come up in relation to using these properties. Properties that hold natural language should always use language-tagged strings, so that systems looking to display them to speakers of various languages will be able to work with them.

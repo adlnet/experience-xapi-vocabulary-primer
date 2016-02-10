@@ -1,0 +1,3 @@
+## Property for linking a term to a natural language meaning (a “Synset”) in Wordnet: {#property-for-linking-a-term-to-a-natural-language-meaning-a-synset-in-wordnet}
+
+**xapi:closelyRelatedNaturalLanguageTerm** while this is a sub property of **skos:relatedMatch**, it should only be used by the original vocabulary author. It relates a **skos:Concept**, such as any xAPI Verb, to a closely related **wordnet:Synset** — basically, a natural language meaning. All of the other properties in this section should only be used to relate xAPI terms of the same sort to each other — Verbs to Verbs, Activity Types to Activity Types, etc.

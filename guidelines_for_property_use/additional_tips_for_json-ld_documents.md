@@ -1,0 +1,14 @@
+## Additional Tips for JSON-LD Documents {#additional-tips-for-json-ld-documents}
+
+By using the following set of guidelines, published vocabulary documents will be more usable by both semantic web and simpler JSON-using clients. In these rules, a “complete IRI” is an in-document IRI that doesn’t use any of the shorthand prefix options JSON-LD makes possible.
+
+1.  The @id of each individual term and vocabulary in the document must be a complete IRI. Refer to the example above. Notice that both the vocabulary IRI (**_https://w3id.org/xapi/adl_**) and “abandoned” verb IRI (**_https://w3id.org/xapi/adl/verbs/abandoned_**) use a complete IRI for the identifier.
+2.  Don’t use **@graph** for grouping Verbs or Activity Types into a vocabulary dataset. Instead use the value the type of vocabulary dataset being represented (e.g., “verbs” or “activity-types”). See the previous JSON-LD code sample above in this document for an example.
+3.  The value of “verbs” in a vocabulary is an array of verbs, with complete IRIs for **@id**. Note: **@type** is needed here, as it is not inferred.
+4.  For all of **broader**, **narrower**, **related**, **closeMatch**, **exactMatch**, **broadMatch**, **narrowMatch**, and **relatedMatch**, the value must be an array of complete IRIs.
+5.  For all of **skos:definition**, **skos:prefLabel**, **skos:altLabel**, **xapi:thirdPartyLabel**, **foaf:name**, the value must be a language map (like in xAPI!). Note that name is not for naming things generally — it’s for people, organizations, groups, etc. The usual construct for naming xAPI’s concepts is prefLabel.
+6.  **xapi:closelyRelatedNaturalLanguageTerm**’s value must be a complete IRI (not in an array).
+7.  **prov:wasGeneratedBy** should be used on the root vocabulary, or more rarely on a vocabulary that is a specialization of the root vocabulary, with a value that is an object (and has a name), indicating the organization or other group involved in its creation.
+8.  If you’re serving up something that isn’t a vocabulary, but is part of one, use **vocabulary** with a value that is the overall vocabulary IRI.
+
+Again, these guidelines are for generating JSON-LD that can be used by both simple JSON clients and more complex clients. Not all JSON-LD generated for xAPI-related applications will need to follow these rules to be useful. Clients based on the above rules should pivot on the presence of **@type** matching “Verb” or “Activity Type”, and servers should avoid those values for the **@type** element (just use **xapi:Verb**, **xapi:ActivityType**, **skos:ConceptScheme**, etc.) when the JSON-LD they’re producing won’t be readily consumable per the above rules.

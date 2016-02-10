@@ -1,0 +1,7 @@
+## Properties used for labeling: {#properties-used-for-labeling}
+
+**skos:prefLabel** should only be used by the creator of a vocabulary term (Verb or Activity Type). It holds the single (per language tag) preferred form for the vocabulary term’s display. If you’re coining a new Verb or Activity Type and want to suggest a display for it, use **skos:prefLabel**.
+
+**skos:altLabel** should only be used (directly) by the creator of a vocabulary term. It holds alternate forms for the vocabulary term’s displayed label. This won’t come up too often unless there are two or more strong candidates for what to use in a vocabulary term’s display.
+
+**xapi:thirdPartyLabel** is a “sub property” of **skos:altLabel**. It is intended to be used by people who did not create the original vocabulary term, but would like to offer an alternative label for it. This could also be used in a language label that already exists, but doesn’t ‘read well’ with some data, or in a language where there isn’t yet a label. For example, a system that was displaying a Verb to a Chinese speaker might first check for a **skos:prefLabel** in Traditional Chinese, then an **skos:altLabel**, then a **xapi:thirdPartyLabel**. This property would also be useful when there’s a Verb with the proper meaning, but without a suitable display.
