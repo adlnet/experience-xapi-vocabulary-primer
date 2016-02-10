@@ -1,11 +1,7 @@
-# Experience xAPI Vocabulary Primer {#experience-xapi-vocabulary-primer}
+# Experience xAPI Vocabulary Primer
 
-Experience API (xAPI) Vocabulary Primer
 
 ![logo](assets/logo.png)
 
-October 2015
 
-DRAFT
-
-(send questions or feedback to: xapi-vocabulary@adlnet.gov)
+(send questions or feedback to: [xapi-vocabulary@adlnet.gov](mailto:xapi-vocabulary@adlnet.gov))
