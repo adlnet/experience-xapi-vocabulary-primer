@@ -15,7 +15,8 @@ where {
    ?verb a xapi:Verb .
   ?verb xapi:thirdPartyLabel ?thirdPartyLabel .
   FILTER(langMatches(lang(?thirdPartyLabel), "zh-tw"))
-}```
+}
+```
 
 Using the above SPARQL query at the endpoint provided (**_http://xapi.vocab.pub/sparql_**) will return the following [results](http://xapi.vocab.pub:8890/sparql?default-graph-uri=&query=PREFIX+xapi%3A+%3Chttps%3A%2F%2Fw3id.org%2Fxapi%2Fontology%23%3E%0D%0A%0D%0Aselect+distinct+%3Fverb+%3FthirdPartyLabel%0D%0A%0D%0Awhere+%7B%0D%0A++%3Fverb+xapi%3AthirdPartyLabel+%3FthirdPartyLabel+.%0D%0A++FILTER%28langMatches%28lang%28%3FthirdPartyLabel%29%2C+%22zh-tw%22%29%29%0D%0A%7D%0D%0AORDER+BY+%3Fverb&should-sponge=&format=text%2Fhtml&timeout=0&debug=on):
 
@@ -73,7 +74,8 @@ where {
        }
    }
 }
-ORDER BY ?verb```
+ORDER BY ?verb
+```
 
 Below is a SPARQL Query to locate which Activity Types are reused/referenced by other vocabularies. The below query will show the English label and description, the vocabulary referencing the Activity Type, scope note, and thirdPartyLabel. Paste the following query into the [***http://xapi.vocab.pub/sparql***](http://xapi.vocab.pub/sparql) endpoint or [***click here***](http://xapi.vocab.pub:8890/sparql?default-graph-uri=&query=PREFIX+xapi%3A+%3Chttps%3A%2F%2Fw3id.org%2Fxapi%2Fontology%23%3E%0D%0A%0D%0Aselect+distinct+%3Factivity+%3Flabel+%3Fdescription+%3Fvocab+%3Fnote+%3FthirdPartyLabel%0D%0A%0D%0Awhere+%7B%0D%0A%7B+%3Factivity+a+xapi%3AActivityType+.%0D%0A++%3Factivity+skos%3AprefLabel+%3Flabel+.%0D%0A++%3Factivity+skos%3Adefinition+%3Fdescription+.%7D%0D%0A%0D%0A%7B+GRAPH%0D%0A+%3Fgraph+%7B+%3Factivity+xapi%3AreferencedBy+%3Fvocab+.%0D%0A+++++++OPTIONAL+%7B+%3Factivity+skos%3AscopeNote+%3Fnote+%7D%0D%0A+++++++OPTIONAL+%7B+%3Factivity+xapi%3AthirdPartyLabel+%3FthirdPartyLabel+%7D%0D%0A+++++++%7D%0D%0A+++%7D%0D%0A%7D%0D%0AORDER+BY+%3Factivity&should-sponge=&format=text%2Fhtml&timeout=0&debug=on) for the results.
 
@@ -94,7 +96,8 @@ where {
        }
    }
 }
-ORDER BY ?activity```
+ORDER BY ?activity
+```
 
 The previous two examples show all of the results of terms that are referenced by other vocabularies. If you wanted to be more specific and narrow down the results to a specific verb (e.g., ADL’s “completed” verb), you could perform the query below. Use the **_http://xapi.vocab.pub/sparql_ **endpoint or [***click here***](http://xapi.vocab.pub:8890/sparql?default-graph-uri=&query=PREFIX+adl%3A+%3Chttp%3A%2F%2Fadlnet.gov%2Fexpapi%2Fverbs%2F%3E%0D%0APREFIX+xapi%3A+%3Chttps%3A%2F%2Fw3id.org%2Fxapi%2Fontology%23%3E%0D%0A%0D%0Aselect+distinct+%3Flabel+%3Fdescription+%3Fsynset+%3Fvocab+%3Fnote+%3FthirdPartyLabel%0D%0A%0D%0Awhere+%7B%0D%0A++%7B%0D%0A++++adl%3Acompleted+skos%3AprefLabel+%3Flabel+.%0D%0A++++adl%3Acompleted+skos%3Adefinition+%3Fdescription+.%0D%0A++++adl%3Acompleted+xapi%3AcloselyRelatedNaturalLanguageTerm+%3Fsynset+.%0D%0A++%7D%0D%0A%7B%0D%0AGRAPH+%3Fgraph+%7B%0D%0A++++adl%3Acompleted+xapi%3AreferencedBy+%3Fvocab+.%0D%0A++++OPTIONAL+%7B+adl%3Acompleted+skos%3AscopeNote+%3Fnote+%7D%0D%0A++++OPTIONAL+%7B+adl%3Acompleted+xapi%3AthirdPartyLabel+%3FthirdPartyLabel+%7D%0D%0A++++%7D%0D%0A++%7D%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on) for the results. This example query also displays other properties such as **xapi:closelyRelatedNaturalLanuageTerm**.
 
@@ -117,7 +120,8 @@ GRAPH ?graph {
     OPTIONAL { adl:completed xapi:thirdPartyLabel ?thirdPartyLabel }
     }
   }
-}```
+}
+```
 
 3.**What verbs are more specialized forms of other verbs?**
 
@@ -138,6 +142,7 @@ GRAPH ?graph {
   OPTIONAL { ?broaderVerb skos:definition ?broaderDescription }
   }
  }
-}```
+}
+```
 
 **Note:** There might be limited results in the above example as at the time of this writing only the IEEE ADB Verb vocabulary had applied any form of semantic relationship mapping between terms both inside and outside of the ADB vocabulary. It is expected that vocabulary tools and refined publishing processes will help make this practice more practical and widespread in the near future.
