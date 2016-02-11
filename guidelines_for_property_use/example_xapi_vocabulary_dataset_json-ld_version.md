@@ -74,4 +74,5 @@ Some parts of the JSON-LD document, such as those properties using SKOS, are int
       ]
     }
   ]
-}```
+}
+```
