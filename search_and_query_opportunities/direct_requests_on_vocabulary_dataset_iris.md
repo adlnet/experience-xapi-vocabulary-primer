@@ -23,7 +23,8 @@ Alternatively, you could use JavaScript to test that JSON-LD is returned using a
 
 <body>
 </body>
-</html>```
+</html>
+```
 
 Direct requests on vocabulary IRIs can be attempted on any of the following vocabularies published as linked datasets:
 
