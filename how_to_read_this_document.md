@@ -54,4 +54,5 @@ Some examples in this primer will also be provided as JSON-LD. The above Turtle 
     "@language": "en",
     "@value": "Indicates that the Authority or application determined the Actor has fulfilled the criteria of the Activity."
   }
-}```
+}
+```
