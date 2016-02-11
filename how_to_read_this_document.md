@@ -17,7 +17,8 @@ Several examples will be also provided with code snippets contained inside of a 
 @prefix ex: <http://www.example.com/>.
 
 ex:aResource ex:aProperty ex:anotherResource;
-  ex:anotherProperty "An RDF Literal"@en.```
+  ex:anotherProperty "An RDF Literal"@en.
+```
 
 Each resource is described as RDF triples as discussed in the [Companion Specification for xAPI Vocabularies](https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/semantic_web_technology,_linked_data,_and_rdf/rdf_data_structure.html). A simplified example of using Turtle for the xAPI Verb ‘satisfied’ with a basic label and description would be written as:
 
