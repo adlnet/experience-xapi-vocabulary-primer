@@ -1,18 +1,56 @@
 # How to Read this Document {#how-to-read-this-document}
 
-This Primer is an introductory document designed to complement the [Companion Specification for xAPI Vocabularies](https://docs.google.com/document/d/1SmyEu5qxTdun-BVNoznhbInKXZ5xLKYp_49qyXa0Lqc/edit?pref=2&pli=1#) by providing the reader with additional knowledge and examples. It is more precise about how to use the terms than the Companion Specification. It also covers some introductory real-world examples of what can be immediately achieved by publishing xAPI vocabularies as Linked Data (LD).
+This Primer is an introductory document designed to complement the [Companion Specification for xAPI Vocabularies](https://docs.google.com/document/d/1SmyEu5qxTdun-BVNoznhbInKXZ5xLKYp_49qyXa0Lqc/edit?pref=2&pli=1#) by providing the reader with additional knowledge and examples. It is more precise about how to use the terms than the Companion Specification. It also covers some introductory real-world examples of what can be immediately achieved by publishing xAPI vocabularies as Linked Data (LD). The reader is presented with a descriptive narrative of classes and properties that are most commonly used for representing [xAPI vocabularies as linked datasets](https://docs.google.com/document/d/1SmyEu5qxTdun-BVNoznhbInKXZ5xLKYp_49qyXa0Lqc/edit?pref=2&pli=1#heading=h.xwvqwzalhk0t).
+## Formatting
+Properties and classes are **bolded**. 
 
-The reader is presented with a descriptive narrative of classes and properties that are most commonly used for representing [xAPI vocabularies as linked datasets](https://docs.google.com/document/d/1SmyEu5qxTdun-BVNoznhbInKXZ5xLKYp_49qyXa0Lqc/edit?pref=2&pli=1#heading=h.xwvqwzalhk0t). Vocabulary and vocabulary term IRIs are all **_bold italicized_ **when described in paragraph text of this document. Classes and properties are **bolded**. Several examples will be also provided with code snippets contained inside of a gray box like the one below. Most of the examples in this document are initially written using the [Turtle syntax for RDF](https://www.w3.org/TR/turtle/). Turtle is used here for improved readability as it allows RDF to be completely written in a compact and simplified natural text form. Examples serialized as Turtle and JSON-LD will appear throughout this document as sample code contained inside the gray box such as the following:
+Code examples are in  ```red text, light gray background```.
 
-| #Turtle example |
-| --- |
+Vocabularies and vocabulary term identifiers are all ***```red bold italicized``` ***when described in this document’s text. 
+
+Internal hyperlinks are [blue text](#) and external links are [***bold blue italicized***](#).
+
+Several examples will be also provided with code snippets contained inside of a gray box like the one below. Most of the examples in this document are initially written using the [Turtle syntax for RDF](https://www.w3.org/TR/turtle/). Turtle is used here for improved readability as it allows RDF to be completely written in a compact and simplified natural text form. Examples serialized as Turtle and JSON-LD will appear throughout this document as sample code contained inside the gray box such as the following:
+
+```
+#Turtle example
+@prefix ex: <http://www.example.com/>.
+
+ex:aResource ex:aProperty ex:anotherResource;
+  ex:anotherProperty "An RDF Literal"@en.```
 
 Each resource is described as RDF triples as discussed in the [Companion Specification for xAPI Vocabularies](https://docs.google.com/document/d/1SmyEu5qxTdun-BVNoznhbInKXZ5xLKYp_49qyXa0Lqc/edit?pref=2&pli=1#heading=h.altocwinmbth). A simplified example of using Turtle for the xAPI Verb ‘satisfied’ with a basic label and description would be written as:
 
-| @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . |
-| --- |
+```
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xapi: <https://w3id.org/xapi/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/xapi/adl/verbs/satisfied> a xapi:Verb ;
+    skos:prefLabel "satisfied"@en ;
+    skos:definition "Indicates that the Authority or application determined the Actor has fulfilled the criteria of the Activity."@en .```
 
 Some examples in this primer will also be provided as JSON-LD. The above Turtle serialization is equivalent to the following example, in JSON-LD syntax:
 
-| { |
-| --- |
+```
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xapi": "https://w3id.org/xapi/ontology#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://w3id.org/xapi/adl/verbs/satisfied",
+  "@type": "xapi:Verb",
+  "skos:prefLabel": {
+    "@language": "en",
+    "@value": "satisfied"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "Indicates that the Authority or application determined the Actor has fulfilled the criteria of the Activity."
+  }
+}```
