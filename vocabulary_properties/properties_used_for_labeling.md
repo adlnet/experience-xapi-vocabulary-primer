@@ -1,4 +1,4 @@
-## Properties used for labeling: {#properties-used-for-labeling}
+## Properties used for labeling {#properties-used-for-labeling}
 
 **skos:prefLabel** should only be used by the creator of a vocabulary term (Verb or Activity Type). It holds the single (per language tag) preferred form for the vocabulary term’s display. If you’re coining a new Verb or Activity Type and want to suggest a display for it, use **skos:prefLabel**.
 
