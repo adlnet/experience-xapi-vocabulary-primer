@@ -32,7 +32,8 @@ Each resource is described as RDF triples as discussed in the [Companion Specifi
 <https://w3id.org/xapi/adl/verbs/satisfied> a xapi:Verb ;
     skos:prefLabel "satisfied"@en ;
     skos:definition "Indicates that the Authority or application determined the Actor has fulfilled the criteria of the Activity."@en . 
-    ```
+```
+
 
 Some examples in this primer will also be provided as JSON-LD. The above Turtle serialization is equivalent to the following example, in JSON-LD syntax:
 
@@ -57,3 +58,4 @@ Some examples in this primer will also be provided as JSON-LD. The above Turtle 
   }
 }
 ```
+
