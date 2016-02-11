@@ -4,9 +4,9 @@ This Primer is an introductory document designed to complement the [Companion Sp
 ## Formatting
 Properties and classes are **bolded**. 
 
-Code examples are in  ```red text or have a light gray background```.
+Code examples have a  ```light gray background```.
 
-Vocabularies and vocabulary term identifiers are all ***```red bold italicized``` ***when described in this document’s text. 
+Vocabularies and vocabulary term identifiers are all ***```italicized with a light gray background``` ***when described in this document’s text. 
 
 Internal hyperlinks are [blue text](#) and external links are [***bold blue italicized***](#).
 
