@@ -6,8 +6,16 @@ The following example SPARQL queries assumes the reader has some knowledge of SQ
 
 1.  **Has anyone published a translation of any existing xAPI verbs from other vocabulary authors in Simplified Chinese (or any other language)?**
 
-| PREFIX xapi: <https://w3id.org/xapi/ontology#> |
-| --- |
+```
+PREFIX xapi: <https://w3id.org/xapi/ontology#>
+
+select distinct ?verb ?thirdPartyLabel
+
+where {
+   ?verb a xapi:Verb .
+  ?verb xapi:thirdPartyLabel ?thirdPartyLabel .
+  FILTER(langMatches(lang(?thirdPartyLabel), "zh-tw"))
+}```
 
 Using the above SPARQL query at the endpoint provided (**_http://xapi.vocab.pub/sparql_**) will return the following [results](http://xapi.vocab.pub:8890/sparql?default-graph-uri=&query=PREFIX+xapi%3A+%3Chttps%3A%2F%2Fw3id.org%2Fxapi%2Fontology%23%3E%0D%0A%0D%0Aselect+distinct+%3Fverb+%3FthirdPartyLabel%0D%0A%0D%0Awhere+%7B%0D%0A++%3Fverb+xapi%3AthirdPartyLabel+%3FthirdPartyLabel+.%0D%0A++FILTER%28langMatches%28lang%28%3FthirdPartyLabel%29%2C+%22zh-tw%22%29%29%0D%0A%7D%0D%0AORDER+BY+%3Fverb&should-sponge=&format=text%2Fhtml&timeout=0&debug=on):
 
