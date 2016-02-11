@@ -1,4 +1,4 @@
-## Properties for vocabulary provenance metadata: {#properties-for-vocabulary-provenance-metadata}
+## Properties for vocabulary provenance metadata {#properties-for-vocabulary-provenance-metadata}
 
 **prov:specializationOf** comes into play to relate revisions of the same vocabulary. The specific revision of the vocabulary is **prov:specializationOf** for the overarching vocabulary.
 
