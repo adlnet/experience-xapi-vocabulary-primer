@@ -2,7 +2,7 @@
 
 By using the following set of guidelines, published vocabulary documents will be more usable by both semantic web and simpler JSON-using clients. In these rules, a “complete IRI” is an in-document IRI that doesn’t use any of the shorthand prefix options JSON-LD makes possible.
 
-1.  The @id of each individual term and vocabulary in the document must be a complete IRI. Refer to the example above. Notice that both the vocabulary IRI (**_https://w3id.org/xapi/adl_**) and “abandoned” verb IRI (**_https://w3id.org/xapi/adl/verbs/abandoned_**) use a complete IRI for the identifier.
+1.  The @id of each individual term and vocabulary in the document must be a complete IRI. Refer to the example above. Notice that both the vocabulary IRI (**_```https://w3id.org/xapi/adl```_**) and “abandoned” verb IRI (**_```https://w3id.org/xapi/adl/verbs/abandoned```_**) use a complete IRI for the identifier.
 2.  Don’t use **@graph** for grouping Verbs or Activity Types into a vocabulary dataset. Instead use the value the type of vocabulary dataset being represented (e.g., “verbs” or “activity-types”). See the previous JSON-LD code sample above in this document for an example.
 3.  The value of “verbs” in a vocabulary is an array of verbs, with complete IRIs for **@id**. Note: **@type** is needed here, as it is not inferred.
 4.  For all of **broader**, **narrower**, **related**, **closeMatch**, **exactMatch**, **broadMatch**, **narrowMatch**, and **relatedMatch**, the value must be an array of complete IRIs.
