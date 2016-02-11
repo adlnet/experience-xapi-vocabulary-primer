@@ -1,4 +1,4 @@
-## Properties for connecting terms to the vocabulary: {#properties-for-connecting-terms-to-the-vocabulary}
+## Properties for connecting terms to the vocabulary {#properties-for-connecting-terms-to-the-vocabulary}
 
 **skos:inScheme** connects an **xapi:Verb** or other xAPI term maintained as part of a vocabulary (**xapi:ActivityType**) to the **skos:ConceptScheme** that is the xAPI vocabulary it is part of. Make each Verb **skos:inScheme** of at least one concept scheme (the overarching vocabulary), plus any new versions of the vocabulary with new revisions.
 
