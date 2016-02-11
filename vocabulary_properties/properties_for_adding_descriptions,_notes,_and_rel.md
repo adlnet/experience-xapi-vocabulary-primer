@@ -1,4 +1,4 @@
-## Properties for adding descriptions, notes, and related information directly: {#properties-for-adding-descriptions-notes-and-related-information-directly}
+## Properties for adding descriptions, notes, and related information directly {#properties-for-adding-descriptions-notes-and-related-information-directly}
 
 **skos:definition** is used to define and describe a Verb (or other xAPI thing) in natural language. It should be left to the creator, along with most of the documentation properties below, though there may be occasions, such as translation, where it makes sense for someone who didn’t create the verb to provide a definition.
 
