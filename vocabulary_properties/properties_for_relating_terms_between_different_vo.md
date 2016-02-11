@@ -1,4 +1,4 @@
-## Properties for relating terms between different vocabularies: {#properties-for-relating-terms-between-different-vocabularies}
+## Properties for relating terms between different vocabularies {#properties-for-relating-terms-between-different-vocabularies}
 
 **skos:broadMatch** is just like **skos:broader** (in fact, it is a sub property) but is intended for use between different vocabularies, and as such is appropriate for use by anyone, which applies to all the ‘Match’ properties.
 
