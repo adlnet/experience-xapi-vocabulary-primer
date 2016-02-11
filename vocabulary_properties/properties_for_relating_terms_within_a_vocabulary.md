@@ -1,4 +1,4 @@
-## Properties for relating terms within a vocabulary: {#properties-for-relating-terms-within-a-vocabulary}
+## Properties for relating terms within a vocabulary {#properties-for-relating-terms-within-a-vocabulary}
 
 **skos:broader** goes from the more specific term to the more general. B skos:broader C means that C’s definition encompasses B’s definition. It is for use inside / within a vocabulary. For example, the IEEE ADB Verb Vocabulary (**https://w3id.org/xapi/adb/verbs**) has a verb (highlighted) that is more specific than another verb in the vocabulary (annotated). The **skos:broader** property would be here to here show this relationship. For example:
 
