@@ -4,7 +4,7 @@ Back to why we’re doing all of this: for what it makes possible. There isn’t
 
 The following example SPARQL queries assumes the reader has some knowledge of SQL-like queries and access to a public SPARQL endpoint. For these examples, the xAPI vocabulary server has provided a public SPARQL endpoint, **_http://xapi.vocab.pub/sparql_**.
 
-1.  **Has anyone published a translation of any existing xAPI verbs from other vocabulary authors in Simplified Chinese (or any other language)?**
+1.**Has anyone published a translation of any existing xAPI verbs from other vocabulary authors in Simplified Chinese (or any other language)?**
 
 ```
 PREFIX xapi: <https://w3id.org/xapi/ontology#>
@@ -51,7 +51,8 @@ where {
   FILTER(langMatches(lang(?label), "zh-cn"))
 }
 ```
-2.  **How many other published xAPI vocabularies are reusing/referencing an existing Verb?**
+
+2.**How many other published xAPI vocabularies are reusing/referencing an existing Verb?**
 
 ```
 # return all of the verbs that are referenced by other vocabularies, and show the label, description, scope note, and third party labels
@@ -118,7 +119,7 @@ GRAPH ?graph {
   }
 }```
 
-3.  **What verbs are more specialized forms of other verbs?**
+3.**What verbs are more specialized forms of other verbs?**
 
 ```
 PREFIX xapi: <https://w3id.org/xapi/ontology#>
