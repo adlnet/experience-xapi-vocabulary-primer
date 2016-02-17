@@ -1,7 +1,5 @@
 # Status of this Document {#status-of-this-document}
 
-This is a draft of the xAPI Vocabulary Primer. This version exists as a Google Doc, but future versions may be in a different format. The document and review history is detailed below.
-
 **Owner**
 
 | Name | Website | Email |
