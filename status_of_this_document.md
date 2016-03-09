@@ -27,4 +27,4 @@
 
 | Document | Location |
 | --- | --- |
-| [Experience API (xAPI) Companion Specification for Vocabularies](https://docs.google.com/document/d/1SmyEu5qxTdun-BVNoznhbInKXZ5xLKYp_49qyXa0Lqc/edit?pref=2&pli=1#heading=h.pf7n0r5rp3nm) | Github |
+| [Experience API (xAPI) Companion Specification for Vocabularies](https://github.com/adlnet/companion-specification-for-xapi-vocabularies/blob/master/SUMMARY.md) | Github |
