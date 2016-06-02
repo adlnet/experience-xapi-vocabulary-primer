@@ -4,8 +4,6 @@ This Primer is an introductory document designed to complement the [Companion Sp
 
 > You can read this vocabulary primer at https://adl.gitbooks.io/experience-xapi-vocabulary-primer/content/
 
-GitBook URL: https://adl.gitbooks.io/experience-xapi-vocabulary-primer/content/
-
 # Contributing to the Project
 
 Send questions or feedback to: [xapi-vocabulary@adlnet.gov](mailto:xapi-vocabulary@adlnet.gov)
