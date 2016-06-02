@@ -1,37 +1,36 @@
 # Experience xAPI Vocabulary Primer
 
+This Primer is an introductory document designed to complement the [Companion Specification for xAPI Vocabularies](https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/) by providing the reader with additional knowledge and examples. It is more precise about how to use the terms than the Companion Specification. It also covers some introductory real-world examples of what can be immediately achieved by publishing xAPI vocabularies as Linked Data (LD). The reader is presented with a descriptive narrative of classes and properties that are most commonly used for representing [xAPI vocabularies as linked datasets](https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/xapi_vocabularies_as_linked_datasets.html).
 
-![logo](assets/logo.png)
-
-# Summary
-
-* [Experience xAPI Vocabulary Primer](README.md)
-* [Status of this Document](status_of_this_document.md)
-* [License](license.md)
-* [How to Read this Document](how_to_read_this_document.md)
-* [Introduction and Motivations](introduction_and_motivations.md)
-* [Whirlwind Backdrop](whirlwind_backdrop.md)
-* [Vocabulary Classes](vocabulary_classes.md)
-* [Vocabulary Properties](vocabulary_properties/README.md)
-   * [Properties used for labeling](vocabulary_properties/properties_used_for_labeling.md)
-   * [Properties for adding descriptions, notes, and related information directly](vocabulary_properties/properties_for_adding_descriptions,_notes,_and_rel.md)
-   * [Properties for connecting terms to the vocabulary](vocabulary_properties/properties_for_connecting_terms_to_the_vocabulary.md)
-   * [Properties for vocabulary provenance metadata](vocabulary_properties/properties_for_vocabulary_provenance_metadata.md)
-   * [Properties for relating terms within a vocabulary](vocabulary_properties/properties_for_relating_terms_within_a_vocabulary.md)
-   * [Properties for relating terms between different vocabularies](vocabulary_properties/properties_for_relating_terms_between_different_vo.md)
-   * [Property for linking a term to a natural language meaning (a “Synset”) in Wordnet](vocabulary_properties/property_for_linking_a_term_to_a_natural_language_.md)
-* [Guidelines for Property Use](guidelines_for_property_use/README.md)
-   * [Example xAPI Vocabulary Dataset (Shown in Turtle RDF)](guidelines_for_property_use/example_xapi_vocabulary_dataset_shown_in_turtle_rd.md)
-   * [JSON-LD for xAPI Vocabularies](guidelines_for_property_use/json-ld_for_xapi_vocabularies.md)
-   * [Example xAPI Vocabulary Dataset (JSON-LD Version)](guidelines_for_property_use/example_xapi_vocabulary_dataset_json-ld_version.md)
-   * [Additional Tips for JSON-LD Documents](guidelines_for_property_use/additional_tips_for_json-ld_documents.md)
-* [Search and Query Opportunities](search_and_query_opportunities/README.md)
-   * [Direct Requests on Vocabulary Dataset IRIs](search_and_query_opportunities/direct_requests_on_vocabulary_dataset_iris.md)
-   * [SPARQL Queries Made Possible](search_and_query_opportunities/sparql_queries_made_possible.md)
-* [Acknowledgements](acknowledgements.md)
-
-
+> You can read this vocabulary primer at https://adl.gitbooks.io/experience-xapi-vocabulary-primer/content/
 
 GitBook URL: https://adl.gitbooks.io/experience-xapi-vocabulary-primer/content/
 
-(send questions or feedback to: [xapi-vocabulary@adlnet.gov](mailto:xapi-vocabulary@adlnet.gov))
+# Contributing to the Project
+
+Send questions or feedback to: [xapi-vocabulary@adlnet.gov](mailto:xapi-vocabulary@adlnet.gov)
+
+# License
+
+This work is free and made available under the Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0) license. Visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/) for more information on the details of this license. In summary, the following terms and conditions apply:
+
+**You are free to:**
+
+*   Share — copy and redistribute the material in any medium or format.
+*   Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+*   The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+**Under the following terms:**
+
+*   Attribution — You must give [appropriate credit](http://creativecommons.org/licenses/by-sa/4.0/#), provide a link to the license, and [indicate if changes were made](http://creativecommons.org/licenses/by-sa/4.0/#). You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+*   ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the [same license](http://creativecommons.org/licenses/by-sa/4.0/#) as the original.
+*   No additional restrictions — You may not apply legal terms or [technological measures](http://creativecommons.org/licenses/by-sa/4.0/#) that legally restrict others from doing anything the license permits.
+
+**Notices:**
+
+*   You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable [exception or limitation](http://creativecommons.org/licenses/by-sa/4.0/#).
+*   No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as [publicity, privacy, or moral rights](http://creativecommons.org/licenses/by-sa/4.0/#) may limit how you use the material.
+
+![Creative Commons License](assets/creative_commons_license.png)
+
+Companion Specification for xAPI Vocabularies by [Advanced Distributed Learning (ADL) Initiative](http://adlnet.gov/) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
