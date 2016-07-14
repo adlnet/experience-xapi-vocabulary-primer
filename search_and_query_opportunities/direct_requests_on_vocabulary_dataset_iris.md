@@ -15,7 +15,7 @@ Alternatively, you could use JavaScript to test that JSON-LD is returned using a
     <script>
         var req = new XMLHttpRequest();
         req.addEventListener('load', function (ev) {console.log(ev);});
-        req.open('GET', 'https://w3id.org/xapi/adl');
+        req.open('GET', 'http://xapi.vocab.pub/datasets/adl');
         req.setRequestHeader('Accept', 'application/ld+json');
         req.send();
     </script>
