@@ -41,7 +41,7 @@ It is expected that more vocabularies will be made available as Communities of P
 *   Serious Games Vocabulary: **_```https://w3id.org/xapi/seriousgames```_**
 *   Video Vocabulary: **_```https://w3id.org/xapi/video```_**
 *   SCORM Vocabulary: **_```https://w3id.org/xapi/scorm```_**
-*   Video Vocabulary: **_```https://w3id.org/xapi/cmi5```_**
+*   cmi5 Vocabulary: **_```https://w3id.org/xapi/cmi5```_**
 
 In addition, valuable information and meaning can be further retrieved from each vocabulary term. The vocabulary datasets use SKOS to express relationships between terms and the vocabulary they belong to (the concept scheme). However, the vocabulary datasets also provide text labels in other languages, descriptions, and links to other sources such as Wordnet for word sense disambiguation. In fact, if you take advantage of “following your nose” to look up other linked data sources, then you will find that each verb should have a link to a wordnet synset. In the previous examples a vocabulary dataset IRI was requested and JSON-LD was returned. The IRI **_```http://wordnet-rdf.princeton.edu/wn31/200485097-v```_** is provided as the **_xapi:closelyRelatedNaturalLanguageTerm_ **for ADL’s “completed” Verb. A subsequent HTTP request on this IRI returns even more useful data, including multiple language translations and other synset members such as the equivalent word “finished,” **_```http://wordnet-rdf.princeton.edu/wn31/finish-v```_**.
 
