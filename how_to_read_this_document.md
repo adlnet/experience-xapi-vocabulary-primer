@@ -1,23 +1,34 @@
+# NOTE: THIS SPEC HAS BEEN SUPERSEDED BY THE [xAPI PROFILE SPECIFICATION](https://github.com/adlnet/xapi-profiles).
+
+# VISIT: [https://github.com/adlnet/xapi-profiles](https://github.com/adlnet/xapi-profiles)
+
+# THIS REPO IS AVAILABLE FOR ARCHIVAL PURPOSES ONLY.
+
+#  {#how-to-read-this-document}
+
 # How to Read this Document {#how-to-read-this-document}
 
-This Primer is an introductory document designed to complement the [Companion Specification for xAPI Vocabularies](https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/) by providing the reader with additional knowledge and examples. It is more precise about how to use the terms than the Companion Specification. It also covers some introductory real-world examples of what can be immediately achieved by publishing xAPI vocabularies as Linked Data (LD). The reader is presented with a descriptive narrative of classes and properties that are most commonly used for representing [xAPI vocabularies as linked datasets](https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/xapi_vocabularies_as_linked_datasets.html).
+This Primer is an introductory document designed to complement the [Companion Specification for xAPI Vocabularies](https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/) by providing the reader with additional knowledge and examples. It is more precise about how to use the terms than the Companion Specification. It also covers some introductory real-world examples of what can be immediately achieved by publishing xAPI vocabularies as Linked Data \(LD\). The reader is presented with a descriptive narrative of classes and properties that are most commonly used for representing [xAPI vocabularies as linked datasets](https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/xapi_vocabularies_as_linked_datasets.html).
+
 ## Formatting
-Properties and classes are **bolded**. 
 
-Code examples are in  ```red text or have a light gray background```.
+Properties and classes are **bolded**.
 
-Vocabularies and vocabulary term identifiers are all ***```red bold italicized``` ***when described in this document’s text. 
+Code examples are in  `red text or have a light gray background`.
 
-Internal hyperlinks are [blue text](#) and external links are [***bold blue italicized***](#).
+Vocabularies and vocabulary term identifiers are all `red bold italicized`_** **_when described in this document’s text.
 
-Several examples will be also provided with code snippets contained inside of a gray box like the one below. Most of the examples in this document are initially written using the [***Turtle syntax for RDF***](https://www.w3.org/TR/turtle/). Turtle is used here for improved readability as it allows RDF to be completely written in a compact and simplified natural text form. Examples serialized as Turtle and JSON-LD will appear throughout this document as sample code contained inside the gray box such as the following:
+Internal hyperlinks are [blue text](#) and external links are [_**bold blue italicized**_](#).
+
+Several examples will be also provided with code snippets contained inside of a gray box like the one below. Most of the examples in this document are initially written using the [_**Turtle syntax for RDF**_](https://www.w3.org/TR/turtle/). Turtle is used here for improved readability as it allows RDF to be completely written in a compact and simplified natural text form. Examples serialized as Turtle and JSON-LD will appear throughout this document as sample code contained inside the gray box such as the following:
 
 ```
 #Turtle example
 @prefix ex: <http://www.example.com/>.
 
 ex:aResource ex:aProperty ex:anotherResource;
-  ex:anotherProperty "An RDF Literal"@en.```
+  ex:anotherProperty "An RDF Literal"@en.
+```
 
 Each resource is described as RDF triples as discussed in the [Companion Specification for xAPI Vocabularies](https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/semantic_web_technology,_linked_data,_and_rdf/rdf_data_structure.html). A simplified example of using Turtle for the xAPI Verb ‘satisfied’ with a basic label and description would be written as:
 
@@ -30,7 +41,8 @@ Each resource is described as RDF triples as discussed in the [Companion Specifi
 
 <https://w3id.org/xapi/adl/verbs/satisfied> a xapi:Verb ;
     skos:prefLabel "satisfied"@en ;
-    skos:definition "Indicates that the Authority or application determined the Actor has fulfilled the criteria of the Activity."@en .```
+    skos:definition "Indicates that the Authority or application determined the Actor has fulfilled the criteria of the Activity."@en .
+```
 
 Some examples in this primer will also be provided as JSON-LD. The above Turtle serialization is equivalent to the following example, in JSON-LD syntax:
 
@@ -53,4 +65,8 @@ Some examples in this primer will also be provided as JSON-LD. The above Turtle 
     "@language": "en",
     "@value": "Indicates that the Authority or application determined the Actor has fulfilled the criteria of the Activity."
   }
-}```
+}
+```
+
+
+
